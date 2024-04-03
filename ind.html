@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Number Verification</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Setting background color */
+  }
+  .card {
+    width: 300px;
+    margin: 100px auto; /* Centering the card */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* Card background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+  }
+  #teamNumberInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #45a049; /* Hover color */
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Enter Team Number</h1>
+    <input type="text" id="teamNumberInput" placeholder="Enter Team Number">
+    <br><br>
+    <button onclick="checkTeamNumber()">Submit</button>
+  </div>
+
+  <script>
+    function checkTeamNumber() {
+      var teamNumber = document.getElementById("teamNumberInput").value;
+      
+      // Replace 'yourteamnumber' with the actual team number you want to check against
+      if (teamNumber === '1') {
+        window.location.href = "https://vinaysiddha.github.io/glitchhunt/"; // Redirect to correct page
+      } else if (teamNumber === '2') {
+        window.location.href = "https://as1.ftcdn.net/v2/jpg/00/87/75/30/1000_F_87753043_6dO0Td8Jfzdjq7pq7XlQwxVRWa2qwC3s.jpg"; // Redirect to incorrect page
+      } else {
+        window.location.href = "https://thumbs.dreamstime.com/z/una-mejor-suerte-la-vez-pr%C3%B3xima-88415080.jpg"; // Redirect to incorrect page
+      }
+    }
+  </script>
+</body>
+</html>
